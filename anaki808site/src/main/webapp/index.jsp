@@ -8,6 +8,22 @@
 </head>
 <body>
 <h1>Aloha, world!</h1>
+<table border="1"><tr><td>&nbsp;</td>
+<td>
+<script type="text/javascript">
+<!--
+google_ad_client = "ca-pub-9576997640448742";
+/* home page */
+google_ad_slot = "9351046040";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td>
+</tr></table>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

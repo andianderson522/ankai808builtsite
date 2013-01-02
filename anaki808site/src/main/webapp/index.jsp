@@ -2,12 +2,21 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta charset="utf-8">
+	<meta name="description" content="Welcome to anaki808built. A site about different programming (mostly java) tasks, solutions and pitfalls.">
 	<title>anaki808built Home Page</title>
+	<link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
 </head>
 <body>
+	<div style="width:100%;background-color: grey;color: white;">
+		<em style="font-size: 3em;padding-left: 1em;">Anaki808built</em>
+	</div>
 	<h1>Aloha, world!</h1>
-	<table style="width: 100%">
+	<h1>Welcome to anaki808built</h1>
+	<p>
+		A site about different programming (mostly java) tasks, solutions and pitfalls.
+	</p>
+	<table style="width: 100%;">
 		<tr>
 			<td>&nbsp;</td>
 			<td>
@@ -24,6 +33,7 @@
 				</script>
 			</td>
 		</tr>
+		</tbody>
 	</table>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];

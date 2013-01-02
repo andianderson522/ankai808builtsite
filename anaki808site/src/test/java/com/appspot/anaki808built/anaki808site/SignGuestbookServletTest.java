@@ -79,7 +79,7 @@ public class SignGuestbookServletTest {
 
     Date afterRequest = new Date();
 
-    verify(response).sendRedirect("/anaki808site.jsp?anaki808siteName=TestGuestbook");
+    verify(response).sendRedirect("/guestbook.jsp?anaki808siteName=TestGuestbook");
 
     User currentUser = UserServiceFactory.getUserService().getCurrentUser();
 

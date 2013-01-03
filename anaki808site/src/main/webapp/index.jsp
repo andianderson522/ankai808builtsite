@@ -8,8 +8,24 @@
 	<link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
 </head>
 <body>
-	<div style="width:100%;background-color: grey;color: white;">
-		<em style="font-size: 3em;padding-left: 1em;">Anaki808built</em>
+	<div id="header">
+		<img alt="White Cat" src="images/whiteCat.jpeg" width="148" height="170"/><em>Anaki808built</em>
+	</div>
+	<div>
+		<div style="float: left;background-color: grey;color: white;padding:1em;margin:10px;margin-left:0px;">
+			<h2>Navigation</h2>
+			<hr/>
+			<h3>section</h3>
+			<ul>
+				<li>Home</li>
+				<li>another</li>
+			</ul>
+			<hr/>
+			<h3>section</h3>
+			<ul>
+				<li>some other</li>
+			</ul>
+		</div>
 	</div>
 	<h1>Aloha, world!</h1>
 	<h1>Welcome to anaki808built</h1>

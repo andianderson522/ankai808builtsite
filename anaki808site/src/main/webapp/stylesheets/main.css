@@ -1,4 +1,17 @@
 body {
     font-family: Verdana, Helvetica, sans-serif;
-    background-color: #FFFFFF;
+    background-color: #FFF;
+}
+#header {
+	color: white;
+	background-color: #006;
+	padding:10px;
+	vertical-align: top;
+}
+#header em {
+	font-size: 3em;
+	padding-left: 1em;
+}
+h2 {
+	color: #FFC;
 }

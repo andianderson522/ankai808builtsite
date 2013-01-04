@@ -9,29 +9,38 @@
 </head>
 <body>
 	<div id="header">
-		<img alt="White Cat" src="images/whiteCat.jpeg" width="148" height="170"/><em>Anaki808built</em>
+		<a href="index.jsp"><img alt="White Cat" src="images/whiteCat.jpeg" width="148" height="170"/></a><em>Anaki808built</em>
 	</div>
-	<div>
-		<div style="float: left;background-color: grey;color: white;padding:1em;margin:10px;margin-left:0px;">
-			<h2>Navigation</h2>
-			<hr/>
-			<h3>section</h3>
-			<ul>
-				<li>Home</li>
-				<li>another</li>
-			</ul>
-			<hr/>
-			<h3>section</h3>
-			<ul>
-				<li>some other</li>
-			</ul>
-		</div>
+	<div style="width:1024px;margin-left: auto;margin-right: auto;text-align: center">
+	<div style="float: left;background-color: #006;;color: white;padding:1em;margin:10px;margin-left:0px;width:250px;">
+		<h2><a href="index.jsp">Anaki808built</a></h2>
+		<hr/>
+		<ul>
+			<li><a href="second-page.html">Second Page</a></li>
+		</ul>
+		<hr/>
+		<h3>section</h3>
+		<ul>
+			<li>some other</li>
+		</ul>
 	</div>
-	<h1>Aloha, world!</h1>
-	<h1>Welcome to anaki808built</h1>
-	<p>
-		A site about different programming (mostly java) tasks, solutions and pitfalls.
-	</p>
+	<div style="float: left;width:70%;min-width:300px;">
+		<h1>Aloha, world!</h1>
+		<h1>Welcome to anaki808built</h1>
+		<p>
+			A site about different programming (mostly java) tasks, solutions and pitfalls.
+		</p>
+		<dl>
+			<dt>Term 1</dt>
+				<dd>Definition of term 1</dd>
+			<dt>Term 2</dt>
+				<dd>Definition of term 2</dd>
+		</dl>
+	</div>
+	<div style="float: left; width:100px; background-color: black;margin:10px;margin-right:0px">
+		&nbsp;
+	</div>
+	</div>
 	<table style="width: 100%;">
 		<tr>
 			<td>&nbsp;</td>

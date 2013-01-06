@@ -37,42 +37,32 @@ import com.google.appengine.api.users.UserServiceFactory;
 import com.google.appengine.tools.development.testing.LocalServiceTestHelper;
 import com.google.appengine.tools.development.testing.LocalUserServiceTestConfig;
 
-public class GuestbookServletTest {
+public final class GuestbookServletTest {
 
-  private GuestbookServlet anaki808siteServlet;
+	private GuestbookServlet anaki808siteServlet;
+	private final LocalServiceTestHelper helper = new LocalServiceTestHelper(new LocalUserServiceTestConfig()).setEnvIsLoggedIn(true).setEnvAuthDomain("localhost").setEnvEmail("test@localhost");
 
-  private final LocalServiceTestHelper helper =
-      new LocalServiceTestHelper(new LocalUserServiceTestConfig())
-          .setEnvIsLoggedIn(true)
-          .setEnvAuthDomain("localhost")
-          .setEnvEmail("test@localhost");
+	@Before
+	public void setupGuestBookServlet() {
+		this.helper.setUp();
+		this.anaki808siteServlet = new GuestbookServlet();
+	}
 
-  @Before
-  public void setupGuestBookServlet() {
-    this.helper.setUp();
-    this.anaki808siteServlet = new GuestbookServlet();
-  }
-
-  @After
-  public void tearDownHelper() {
-    this.helper.tearDown();
-  }
+	@After
+	public void tearDownHelper() {
+		this.helper.tearDown();
+	}
 
 	@Ignore
-  @Test
-  public void testDoGet() throws IOException {
-    final HttpServletRequest request = mock(HttpServletRequest.class);
-    final HttpServletResponse response = mock(HttpServletResponse.class);
-
-    final StringWriter stringWriter = new StringWriter();
-
-    when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
-
-    this.anaki808siteServlet.doGet(request, response);
-
-    final User currentUser = UserServiceFactory.getUserService().getCurrentUser();
-
+	@Test
+	public void testDoGet() throws IOException {
+		final HttpServletRequest request = mock(HttpServletRequest.class);
+		final HttpServletResponse response = mock(HttpServletResponse.class);
+		final StringWriter stringWriter = new StringWriter();
+		when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
+		this.anaki808siteServlet.doGet(request, response);
+		final User currentUser = UserServiceFactory.getUserService().getCurrentUser();
 		assertEquals("Hello, " + currentUser.getNickname(), stringWriter.toString());
-  }
+	}
 
 }
